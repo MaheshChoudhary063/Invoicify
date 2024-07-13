@@ -1,7 +1,7 @@
 # Invoicify
 
 
-Invoicify is a full-featured invoicing application built using the MERN stack. It provides a robust and intuitive platform for managing invoices, clients, and payments.
+Invoicify is a full-featured invoicing application built using the MERN stack. It provides a robust and intuitive platform for managing invoices
 
 
 ## Features
