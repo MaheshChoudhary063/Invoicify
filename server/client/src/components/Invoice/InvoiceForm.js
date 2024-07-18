@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Button, Form, Card } from "react-bootstrap";
-import InvoiceItem from "../Invoice/InvoiceItem";
+import InvoiceItem from "./InvoiceItem";
 import InvoiceModal from "./InvoiceModal";
 import axios from "axios";
 class InvoiceForm extends Component {

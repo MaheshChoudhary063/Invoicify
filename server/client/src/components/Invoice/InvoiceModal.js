@@ -67,7 +67,7 @@ const InvoiceModal = ({
         </div>
         <div className="d-flex justify-content-between mb-4">
           <div>
-            <h5 className="m-0">Invoice To:</h5>
+            {/* <h5 className="m-0">Invoice To:</h5> */}
             <p className="m-0">{info.billTo || ""}</p>
             <p className="m-0">{info.billToEmail || ""}</p>
             <p className="m-0">{info.billToAddress || ""}</p>
@@ -132,7 +132,6 @@ const InvoiceModal = ({
         <div className="mb-4">
           <h5 className="mb-3">Address</h5>
           <p className="mb-1">Galaxy Corporation Near ACD Foundation</p>
-          
         </div>
         <div className="mb-4">
           <p className="mb-1">Thank you for your purchase!</p>

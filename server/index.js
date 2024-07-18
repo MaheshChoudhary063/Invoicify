@@ -18,10 +18,11 @@ app.use("/invoices", invoiceRoutes);
 app.get("/", (req, res) => {
   res.send("SERVER IS RUNNING Be Conformatable");
 });
-
+const DB_URL = process.env.DB_URL;
+const PORT = process.env.PORT || 5000;
 // const DB_URL = process.env.DB_URL;
-const PORT = 5000;
-const  DB_URL="mongodb+srv://mahesh63choudhary:r0K6bRkEgzoI6rEg@cluster0.pvov6l2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// const PORT = 5000;
+// const  DB_URL="mongodb+srv://mahesh63choudhary:r0K6bRkEgzoI6rEg@cluster0.pvov6l2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 // const 
 
 mongoose
