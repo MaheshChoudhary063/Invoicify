@@ -9,7 +9,9 @@ const EditInvoiceComponent = () => {
   useEffect(() => {
     const fetchInvoice = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/invoices/${id}`);
+        const response = await fetch(
+          `https://invoicify-ktl2.onrender.com/${id}`
+        );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -25,13 +27,16 @@ const EditInvoiceComponent = () => {
 
   const handleFormSubmit = async (updatedInvoiceData) => {
     try {
-      const response = await fetch(`http://localhost:5000/invoices/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(updatedInvoiceData),
-      });
+      const response = await fetch(
+        `https://invoicify-ktl2.onrender.com/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(updatedInvoiceData),
+        }
+      );
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }

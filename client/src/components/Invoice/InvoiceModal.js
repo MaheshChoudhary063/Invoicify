@@ -27,13 +27,13 @@ const InvoiceModal = ({
     try {
       if (info._id) {
         const response = await axios.put(
-          `http://localhost:5000/invoices/${info._id}`,
+          `https://invoicify-ktl2.onrender.com/${info._id}`,
           invoiceData
         );
         console.log("Invoice updated successfully:", response.data);
       } else {
         const response = await axios.post(
-          "http://localhost:5000/invoices/",
+          `https://invoicify-ktl2.onrender.com/`,
           invoiceData
         );
         console.log("New Invoice created:", response.data);

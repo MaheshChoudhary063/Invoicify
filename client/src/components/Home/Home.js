@@ -24,9 +24,12 @@ const Home = () => {
         break;
       case "Delete":
         try {
-          const response = await fetch(`http://localhost:5000/invoices/${id}`, {
-            method: "DELETE",
-          });
+          const response = await fetch(
+            `https://invoicify-ktl2.onrender.com/invoices/${id}`,
+            {
+              method: "DELETE",
+            }
+          );
           if (!response.ok) {
             throw new Error("Failed to delete invoice");
           }
@@ -61,7 +64,9 @@ const Home = () => {
     const fetchInvoices = async () => {
       setStatus("loading");
       try {
-        const response = await fetch("http://localhost:5000/invoices");
+        const response = await fetch(
+          "https://invoicify-ktl2.onrender.com/invoices"
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }

@@ -23,7 +23,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/users/signup",
+        `https://invoicify-ktl2.onrender.com/users/signup`,
         formData
       );
       console.log("Signup successful:", data);

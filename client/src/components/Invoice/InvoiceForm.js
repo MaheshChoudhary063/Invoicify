@@ -111,7 +111,7 @@ class InvoiceForm extends Component {
 
   saveInvoice = (invoiceData) => {
     axios
-      .post("http://localhost:5000/invoices/", invoiceData)
+      .post(`https://invoicify-ktl2.onrender.com/`, invoiceData)
       .then((response) => {
         console.log("Invoice saved successfully:", response.data);
         this.setState({ isOpen: false });
